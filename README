@@ -1,1 +1,13 @@
-Sed scripts that process text in various ways.
+Fun sed scripts.
+
+cat, fold, head, rev, tac, tail, uniq
+    are implementations of the unix commands (no opts)
+
+longest
+    outputs longest line in the input
+    
+palindromes
+    outputs all palindromes in input (lines that are the same forward and backwords)
+    
+parentheses
+    checks if the parentheses () match over the input

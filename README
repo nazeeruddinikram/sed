@@ -13,4 +13,4 @@ parentheses
     checks if the parentheses () match over the input
 
 
-Any of these can be run as executables as normal, assuming you have sed in /bin/sed
+Any of these can be run as an executable script as normal, assuming you have sed in /bin/sed

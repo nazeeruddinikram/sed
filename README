@@ -1,4 +1,4 @@
-Fun sed scripts.
+Sed scripts.
 
 cat, fold, head, rev, tac, tail, uniq
     are implementations of the unix commands (no opts)
@@ -11,3 +11,6 @@ palindromes
     
 parentheses
     checks if the parentheses () match over the input
+
+
+Any of these can be run as executables as normal, assuming you have sed in /bin/sed

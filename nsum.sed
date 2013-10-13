@@ -68,7 +68,6 @@ ${
         s/b/a/g
         s/^/-/
     }
-    s/^x*x/x/
     s/xaaaaaaaaa/9/g
     s/xaaaaaaaa/8/g
     s/xaaaaaaa/7/g

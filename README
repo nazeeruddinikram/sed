@@ -12,5 +12,8 @@ palindromes
 parentheses
     checks if the parentheses () match over the input
 
+nsum
+    sums integer input: accepts positive/negative numbers, one line per integer
+
 
 Any of these can be run as an executable script as normal, assuming you have sed in /bin/sed

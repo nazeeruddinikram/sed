@@ -1,6 +1,8 @@
 #!/bin/sed -nf
 #sum integers (positive or negative).  Input: one line per integer
 
+#represent a digit, n, as xa**n
+#b = negative digit
 s/[^0-9-]//g
 s/0/x/g
 s/1/xa/g
@@ -15,8 +17,9 @@ s/9/xaaaaaaaaa/g
 /^-/ s/a/b/g
 s/-//g
 
+#add things without worrying about carrying
 G
-s/^\(.*\)$/\1\n/
+s/$/\n/
 :a
 /^\n\n/{
     bb
@@ -28,6 +31,7 @@ ba
 :b
 s/\n\n//
 
+#simplify: make result have all a's or all b's, less than 10 a's or b's in a row
 :c
 /ba/{
     s/ba//g
@@ -60,9 +64,12 @@ s/\n\n//
     bc
 }
 
+#get rid of all leading zeros
 s/^x*x/x/
 
 h
+
+#print out in readable format at EOF
 ${
     /b/ {
         s/b/a/g

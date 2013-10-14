@@ -1,12 +1,15 @@
 #!/bin/sed -f
 
+#hold space stores a stack of parentheses
 :a
+#a ( is encountered
 /^[^()]*(/{
     x
     s/^\(.*\)$/\1(/
     x
     s/^[^()]*(//
 }
+#a ) is encountered
 /^[^()]*)/{
     x
     /^$/ {
@@ -23,8 +26,8 @@ $ !d
 ${
     :end
     x
-    /^[^()]*$/ s/^.*$/Balanced/
-    /[()]/ s/^.*$/Unbalanced/
+    /./ s/^.*$/Unbalanced/
+    /^$/ s/^.*$/Balanced/
     q
 }
 

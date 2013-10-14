@@ -1,6 +1,6 @@
 Sed scripts.
 
-cat, fold, head, rev, tac, tail, uniq
+cat, fold, head, rev, tac, tail, uniq, wc
     are implementations of the unix commands (no opts)
 
 longest
@@ -14,6 +14,5 @@ parentheses
 
 nsum
     sums integer input: accepts positive/negative numbers, one line per integer
-
 
 Any of these can be run as an executable script as normal, assuming you have sed in /bin/sed

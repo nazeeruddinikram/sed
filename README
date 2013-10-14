@@ -7,7 +7,7 @@ longest
     outputs longest line in the input
     
 palindromes
-    outputs all palindromes in input (lines that are the same forward and backwords)
+    outputs all palindromes in input (lines that are the same forward and backwards)
     
 parentheses
     checks if the parentheses () match over the input

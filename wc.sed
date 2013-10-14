@@ -1,6 +1,6 @@
 #!/bin/sed -nf
 #implements wc, counting tabs, spaces, and newlines as word separators
-#all default fields (-l, -c, -m)
+#all default fields (-l, -w, -m)
 
 bmain
 
